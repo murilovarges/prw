@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    
+  }
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+ 
+h1{
+    text-align: center;
+   
+}
+
+#teste {
+    
+    width: 50%;
+    margin: 0 auto;
+}
+.form-item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    height: 20px;;
+}
+
+#teste div label {
+    display: block;
+    width: 20%;
+    float: left;
+}
+#teste div input {
+    display: block;
+    width: 80%;
+    float: left;
+}
+
+#teste div #btn {
+    width: 100px;
+    float: right;
+}
+#btn:hover{
+    background-color: rgb(118, 212, 197);
+}
