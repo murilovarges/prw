@@ -1,6 +1,6 @@
 <?php
     $hostname = "localhost";
-    $port     = 3307;
+    $port     = 3306;
     $username = "root";
     $password = "";
     $database = "projeto01";
@@ -9,5 +9,5 @@
         printf("Erro ao conectar ao banco de dados: %s\n", mysqli_connect_error());
         exit;     
     }
-    printf("Banco de dados conectado com sucesso \o/")
+    //printf("Banco de dados conectado com sucesso \o/")
 ?>
