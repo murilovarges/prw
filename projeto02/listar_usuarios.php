@@ -27,7 +27,7 @@
         <!-- tr>th*4 -->
         <tr>
             <th>Código</th>
-            <th>Foto</th>
+            <th>Foto</th> 
             <th>Nome</th>
             <th>Email</th>
             <th>Telefone</th>
@@ -38,7 +38,8 @@
             while ($row = mysqli_fetch_array($result)) {
                 echo "<tr>";
                 echo "<td>" .$row['id_usuario']. "</td>";
-                echo "<td><img src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' width='150' height='150'/></td>";
+                echo "<td><img src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] ).
+                "' width='150' height='150'/></td>";
                 echo "<td><a href='altera_usuario.php?id_usuario=".$row['id_usuario']."'>" .$row['nome_usuario']. "</a></td>";
                 echo "<td>" .$row['email_usuario']. "</td>";
                 echo "<td>" .$row['telefone_usuario']. "</td>";
