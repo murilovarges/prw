@@ -1,6 +1,5 @@
 <?php
   include('conexao.php');
-
   // Upload da foto     
   $fotoNome = $_FILES['foto']['name'];
   $target_dir = "upload/";
@@ -24,8 +23,8 @@
   $telefone = $_POST['telefone'];
       
   echo "<h1> Alteração de dados </h1>";
-  echo "<p> Nome Usuário: " . $nome . "<p>";    
-  if(isset($fotoNome)){
+  echo "<p> Nome Usuário: " . $nome . "<p>";  
+  if(strlen($fotoNome) > 0){
     $sql = "UPDATE usuario SET
               nome_usuario='".$nome."',
               email_usuario='".$email."',
